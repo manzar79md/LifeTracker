@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LifeTrack | Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Let’s understand your situation</h1>
+
+    <form method="POST" action="/result">
+
+        <p>1. How urgent is income for you right now?</p>
+        <label><input type="radio" name="income" value="urgent" required> I need income within 1–2 months</label><br>
+        <label><input type="radio" name="income" value="medium"> I can survive 3–6 months</label><br>
+        <label><input type="radio" name="income" value="low"> Money is not a big issue</label>
+
+        <p>2. What is your current status?</p>
+        <label><input type="radio" name="status" value="student" required> Studying</label><br>
+        <label><input type="radio" name="status" value="jobless"> Graduated, no job</label><br>
+        <label><input type="radio" name="status" value="working"> Working in low-pay job</label><br>
+        <label><input type="radio" name="status" value="exam"> Preparing for exams</label>
+
+        <p>3. How many hours can you realistically give daily?</p>
+        <label><input type="radio" name="hours" value="lt3" required> Less than 3</label><br>
+        <label><input type="radio" name="hours" value="3to5"> 3–5</label><br>
+        <label><input type="radio" name="hours" value="6to8"> 6–8</label><br>
+        <label><input type="radio" name="hours" value="8plus"> More than 8</label>
+
+        <p>4. Are you under family pressure to earn?</p>
+        <label><input type="radio" name="pressure" value="high" required> Yes, badly</label><br>
+        <label><input type="radio" name="pressure" value="medium"> Somewhat</label><br>
+        <label><input type="radio" name="pressure" value="low"> No</label>
+
+        <p>5. What hurts you most right now?</p>
+        <label><input type="radio" name="pain" value="money" required> No money</label><br>
+        <label><input type="radio" name="pain" value="direction"> No direction</label><br>
+        <label><input type="radio" name="pain" value="future"> Fear of future</label><br>
+        <label><input type="radio" name="pain" value="useless"> Feeling useless</label>
+
+        <br><br>
+        <button type="submit" class="btn">See My Direction</button>
+
+    </form>
+</div>
+
+</body>
+</html>
