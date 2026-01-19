@@ -44,4 +44,4 @@ This is **Version 1 (V1)** and focuses on clarity, not complexity.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/LifeTracker.git
+   git clone https://github.com/manzar79md/LifeTracker.git
